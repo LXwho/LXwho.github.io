@@ -8,7 +8,7 @@
 <script type="text/javascript">
 $(document).ready(function(){
 	$("#otherPage").click(function(){
-		alert("点我啊");
+		$(".address").attr("href","www.baidu.com");
 	});
 	$("p").click(function(){
 		$(this).hide();
@@ -19,24 +19,26 @@ $(document).ready(function(){
 </head>
 
 <body topmargin="0" leftmargin="0">
-<table width="100%" border="0" cellspacing="0" cellpadding="0">
-  <tr>
-    <td background="http://www.goodlx.online/image/ht-topbg.jpg"><img src="http://www.goodlx.online/image/ht-top01.jpg" width="1024" height="79" /></td>
-  </tr>
-  <tr>
-    <td valign="middle" background="http://www.goodlx.online/image/ht-top02.jpg" class="top01"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr>
-        <td class="top02">
-	机构：肇庆局&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	用户名：admin&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="body_sys/newPwd.html" target="mainFrame">修改密码</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<a href="javascript:top.logout();">注销</a>
-	</td>
-      </tr>
-    </table></td>
-  </tr>
-</table>
-<input type ="button" value="跳转" id="otherPage"></input>
-<p>If you click on me, I will disappear.</p>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	  <tr>
+		<td background="http://www.goodlx.online/image/ht-topbg.jpg"><img src="http://www.goodlx.online/image/ht-top01.jpg" width="1024" height="79" /></td>
+	  </tr>
+	  <tr>
+		<td valign="middle" background="http://www.goodlx.online/image/ht-top02.jpg" class="top01"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+		  <tr>
+			<td class="top02">
+		机构：肇庆局&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		用户名：admin&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="body_sys/newPwd.html" target="mainFrame">修改密码</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="javascript:top.logout();">注销</a>
+		</td>
+		  </tr>
+		</table></td>
+	  </tr>
+	</table>
+	<a href="" class="address">
+		<input type ="button" value="跳转" id="otherPage"></input>
+	</a>
+	<p>If you click on me, I will disappear.</p>
 </body>
 </html>
